@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stage_dates",
+  "info": {
+    "singularName": "stage-date",
+    "pluralName": "stage-dates",
+    "displayName": "StageDate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "placesLeft": {
+      "type": "integer"
+    }
+  }
+}

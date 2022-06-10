@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "singularName": "reservation",
+    "pluralName": "reservations",
+    "displayName": "Reservation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "company": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stage.stage"
+    },
+    "stage_date": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stage-date.stage-date"
+    }
+  }
+}
