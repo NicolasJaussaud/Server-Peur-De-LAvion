@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partenaires",
+  "info": {
+    "singularName": "partenaire",
+    "pluralName": "partenaires",
+    "displayName": "Partenaire"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "reservation",
     "pluralName": "reservations",
-    "displayName": "Reservation"
+    "displayName": "Reservation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,12 +21,6 @@
     "email": {
       "type": "email"
     },
-    "company": {
-      "type": "string"
-    },
-    "adress": {
-      "type": "string"
-    },
     "stage": {
       "type": "relation",
       "relation": "oneToOne",
@@ -35,6 +30,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::stage-date.stage-date"
+    },
+    "phone": {
+      "type": "string"
     }
   }
 }
