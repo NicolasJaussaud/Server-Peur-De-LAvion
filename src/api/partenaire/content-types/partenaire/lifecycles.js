@@ -7,11 +7,11 @@ module.exports = {
                 to: 'manucoccolo@gmail.com',
                 from: 'noreply@peurdelavion.fr',
                 replyTo: 'noreply@peurdelavion.fr',
-                subject: "[Nouveau contact] peurdelavion.fr",
+                subject: "[Nouveau partenaire] peurdelavion.fr",
                 html: `
                 <html>
                 <body>
-                    <h3>Nouvelle réponse au formulaire de contact</h3>
+                    <h3>Nouvelle réponse au formulaire de partenariat</h3>
                     <br/>
                     <p>Message de: ${result.firstName}  ${result.lastName} </p>
                     <p>Envoyé depuis: ${result.email}</p>
