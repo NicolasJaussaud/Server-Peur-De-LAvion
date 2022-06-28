@@ -23,9 +23,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::stage-date.stage-date"
-    },
-    "priceID": {
-      "type": "string"
     }
   }
 }

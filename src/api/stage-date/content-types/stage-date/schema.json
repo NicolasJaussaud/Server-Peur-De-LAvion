@@ -4,7 +4,8 @@
   "info": {
     "singularName": "stage-date",
     "pluralName": "stage-dates",
-    "displayName": "StageDate"
+    "displayName": "StageDate",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,9 @@
     },
     "placesLeft": {
       "type": "integer"
+    },
+    "priceId": {
+      "type": "uid"
     }
   }
 }
