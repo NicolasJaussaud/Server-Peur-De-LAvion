@@ -7,7 +7,7 @@ module.exports = {
                 to: result.email,
                 from: 'noreply@peurdelavion.fr',
                 replyTo: 'noreply@peurdelavion.fr',
-                template_id: "d-7a4aeaddfb6e4e77aee447288b701044",
+                template_id: "d-48c2af4d5cf2493ca2f002b62416d875",
             }); 
         } catch(err) {
             console.log(err);
