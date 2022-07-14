@@ -2,13 +2,22 @@ module.exports = {
   // '*/1 * * * *' 1 minute
   // '0/10 * * * * *' 10 secondes
 
-  '0/20 * * * * *': async () => {
+  '0/45 * * * * *': async () => {
 
     const emails = [
-      "d-44c611b8d86c4b79bc2dfed0eb8be507",
-      "d-9ed77070a62f47db86c8bb1854b31d61",
-      "d-a09b0e2a9d35493b9c71710566426f85",
-      "d-d0169120903f40cb92aadfe96d3becd1",
+      {
+        id: "d-44c611b8d86c4b79bc2dfed0eb8be507",
+
+      },
+      {
+        id: "d-9ed77070a62f47db86c8bb1854b31d61",
+      },
+      {
+        id: "d-a09b0e2a9d35493b9c71710566426f85",
+      },
+      {
+        id: "d-d0169120903f40cb92aadfe96d3becd1",
+      }
     ]
 
     const updateWebinar = async (id, nextStep) => {
@@ -26,35 +35,28 @@ module.exports = {
 
     
     const sendEmail = async (webinar) => {
-      try {
-        await strapi.plugins['email'].services.email.send({
-            to: webinar.email,
-            from: 'noreply@peurdelavion.fr',
-            replyTo: 'noreply@peurdelavion.fr',
-            template_id: emails[webinar.emailStep],
-        });
-      } catch(err) {
-          console.log(err);
+      if (webinar.emailStep > 0) {
+        try {
+          await strapi.plugins['email'].services.email.send({
+              to: webinar.email,
+              from: 'noreply@peurdelavion.fr',
+              replyTo: 'noreply@peurdelavion.fr',
+              template_id: emails[webinar.emailStep - 1].id,
+          });
+        } catch(err) {
+            console.log(err);
+        }
       }
-      console.log(`Send email n°${webinar.emailStep} to ${webinar.email}`);
+      // console.log(`Send email n°${webinar.emailStep} to ${webinar.email}`);
       updateWebinar(webinar.id, webinar.emailStep + 1);
     }
 
     try {
       const webinars = await strapi.db.query('api::webinar.webinar').findMany({
         where: {
-          $and: [
-            {
-              emailStep: {
-                $lt: 5, // Strictement inférieur à 5
-              },
-            },
-            {
-              isProcessed: {
-                $eq: false,
-              },
-            },
-          ],
+          emailStep: {
+            $lt: 5, // Strictement inférieur à 5
+          },
         },
       });
       if (!webinars.length) {

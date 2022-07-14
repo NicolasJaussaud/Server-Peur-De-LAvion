@@ -3,16 +3,16 @@ module.exports = {
         const { result } = event;
 
         const updateWebinar = async (webinar) => {
-            try {
-              await strapi.db.query('api::webinar.webinar').update({
-                where: { id: { $eq: webinar.id }},
-                data: {
-                  emailStep: 1
-                }
-              })
-            } catch(err) {
-              strapi.log.error("ERROR updateWebinar");
-            }
+          try {
+            await strapi.db.query('api::webinar.webinar').update({
+              where: { id: { $eq: webinar.id }},
+              data: {
+                emailStep: 1
+              }
+            })
+          } catch(err) {
+            strapi.log.error("ERROR updateWebinar");
+          }
         }
 
         /** Send email */

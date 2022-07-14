@@ -15,11 +15,6 @@
     "email": {
       "type": "email"
     },
-    "isProcessed": {
-      "type": "boolean",
-      "default": false,
-      "private": true
-    },
     "emailStep": {
       "type": "integer",
       "private": true,
