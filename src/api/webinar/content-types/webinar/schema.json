@@ -4,7 +4,8 @@
   "info": {
     "singularName": "webinar",
     "pluralName": "webinars",
-    "displayName": "Webinar"
+    "displayName": "Webinar",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,16 @@
   "attributes": {
     "email": {
       "type": "email"
+    },
+    "isProcessed": {
+      "type": "boolean",
+      "default": false,
+      "private": true
+    },
+    "emailStep": {
+      "type": "integer",
+      "private": true,
+      "default": 0
     }
   }
 }
