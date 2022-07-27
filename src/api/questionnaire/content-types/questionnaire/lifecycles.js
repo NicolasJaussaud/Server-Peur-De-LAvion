@@ -2,9 +2,10 @@ module.exports = {
     async afterCreate(event) {
         const { result } = event;
 
+        console.log("result => ", result);
         try {
             await strapi.plugins['email'].services.email.send({
-                to: 'jaussaudnc@gmail.com',
+                to: 'manucoccolo@gmail.com',
                 from: 'noreply@peurdelavion.fr',
                 replyTo: 'noreply@peurdelavion.fr',
                 subject: "[Nouveau Questionnaire] peurdelavion.fr",
