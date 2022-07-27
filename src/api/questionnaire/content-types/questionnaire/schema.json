@@ -4,15 +4,118 @@
   "info": {
     "singularName": "questionnaire",
     "pluralName": "questionnaires",
-    "displayName": "Questionnaire"
+    "displayName": "Questionnaire",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "questionnaire": {
-      "type": "json"
+    "sexe": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "integer"
+    },
+    "comment_avez_vous_connu_notre_site": {
+      "type": "string"
+    },
+    "avez_vous_deja_pris_lavion": {
+      "type": "string"
+    },
+    "depuis_combie_de_temps_navez_vous_pas_pris_lavion": {
+      "type": "string"
+    },
+    "votre_peur_a_commence": {
+      "type": "string"
+    },
+    "element_declencheur": {
+      "type": "string"
+    },
+    "acheter_un_billet_davion": {
+      "type": "integer"
+    },
+    "voir_un_avion": {
+      "type": "integer"
+    },
+    "amener_quelquun_a_laeroport": {
+      "type": "integer"
+    },
+    "prendre_lavion": {
+      "type": "integer"
+    },
+    "le_decollage": {
+      "type": "integer"
+    },
+    "des_bruits_dans_lavion": {
+      "type": "integer"
+    },
+    "dune_panne_de_moteur": {
+      "type": "integer"
+    },
+    "du_crash": {
+      "type": "integer"
+    },
+    "des_turbulences": {
+      "type": "integer"
+    },
+    "dune_rupture_de_la_structure_de_lavion_ou_des_ailes": {
+      "type": "integer"
+    },
+    "des_orages": {
+      "type": "integer"
+    },
+    "dun_vol_de_nuit": {
+      "type": "integer"
+    },
+    "de_latterrissage": {
+      "type": "integer"
+    },
+    "dun_attentat": {
+      "type": "integer"
+    },
+    "de_la_peur_davoir_peur": {
+      "type": "integer"
+    },
+    "de_lenfermement": {
+      "type": "integer"
+    },
+    "si_un_autre_element_precisez": {
+      "type": "string"
+    },
+    "dune_maniere_generale_avez_vous_peur_en_altitude": {
+      "type": "string"
+    },
+    "dune_maniere_generale_avez_vous_des_problemes_dans_les_endroits_confines": {
+      "type": "string"
+    },
+    "dune_maniere_generale_avez_vous_le_besoin_de_toujours_garder_le_controle_de_chaque_situation": {
+      "type": "string"
+    },
+    "avez_vous_deja_fait_une_crise_de_panique": {
+      "type": "string"
+    },
+    "moyens_de_transport_dans_lesquels_vous_ressentez_une_gene_importante": {
+      "type": "string"
+    },
+    "avez_vous_un_vol_de_prevu": {
+      "type": "string"
+    },
+    "quelle_ville_vous_interesserait_le_plus_pour_suivre_notre_stage": {
+      "type": "string"
     }
   }
 }
