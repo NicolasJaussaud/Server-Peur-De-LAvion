@@ -99,16 +99,16 @@
     "dune_maniere_generale_avez_vous_peur_en_altitude": {
       "type": "string"
     },
-    "dune_maniere_generale_avez_vous_des_problemes_dans_les_endroits_confines": {
+    "dans_les_endroits_confines": {
       "type": "string"
     },
-    "dune_maniere_generale_avez_vous_le_besoin_de_toujours_garder_le_controle_de_chaque_situation": {
+    "garder_le_controle_de_chaque_situation": {
       "type": "string"
     },
     "avez_vous_deja_fait_une_crise_de_panique": {
       "type": "string"
     },
-    "moyens_de_transport_dans_lesquels_vous_ressentez_une_gene_importante": {
+    "ressentez_une_gene_importante": {
       "type": "string"
     },
     "avez_vous_un_vol_de_prevu": {

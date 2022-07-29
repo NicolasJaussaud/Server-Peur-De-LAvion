@@ -52,10 +52,10 @@ module.exports = {
                     <p>Si un autre élément, précisez: <strong>${checkResult(result.si_un_autre_element_precisez)}</strong></p>
                     <br/>
                     <p>D'une manière générale, avez-vous peur en altitude ?: <strong>${result.dune_maniere_generale_avez_vous_peur_en_altitude}</strong></p>
-                    <p>D'une manière générale, avez-vous des problèmes dans les endroits confinés ?: <strong>${result.dune_maniere_generale_avez_vous_des_problemes_dans_les_endroits_confines}</strong></p>
-                    <p>D'une manière générale, avez-vous le besoin de toujours garder le contrôle de chaque situation ?: <strong>${result.dune_maniere_generale_avez_vous_le_besoin_de_toujours_garder_le_controle_de_chaque_situation}</strong></p>
+                    <p>D'une manière générale, avez-vous des problèmes dans les endroits confinés ?: <strong>${result.dans_les_endroits_confines}</strong></p>
+                    <p>D'une manière générale, avez-vous le besoin de toujours garder le contrôle de chaque situation ?: <strong>${result.garder_le_controle_de_chaque_situation}</strong></p>
                     <p>Avez-vous déja fait une crise de panique ?: <strong>${result.avez_vous_deja_fait_une_crise_de_panique}</strong></p>
-                    <p>Sélectionnez les moyens de transport dans lesquels vous ressentez une gêne importante: <strong>${result.moyens_de_transport_dans_lesquels_vous_ressentez_une_gene_importante}</strong></p>
+                    <p>Sélectionnez les moyens de transport dans lesquels vous ressentez une gêne importante: <strong>${result.ressentez_une_gene_importante}</strong></p>
                     <br/>
                     <p>Avez-vous un vol de prévu ?: <strong>${result.avez_vous_un_vol_de_prevu}</strong></p>
                     <p>Quelle ville vous interesserait le plus pour suivre notre stage ?: <strong>${result.quelle_ville_vous_interesserait_le_plus_pour_suivre_notre_stage}</strong></p>
